@@ -10,8 +10,11 @@ def get_dict_value():
     valueFromRust = libmyrustlib.get_value_from_rust(data, tofind)
     print(f"Rust returned {valueFromRust} from {tofind}")
 
+def sort_list():
+    x = libmyrustlib.sort_list([50, 30, 45, 23, 43, 1])
+    print(x)
 
-get_dict_value()
+sort_list()
 
 
 # implementation for counting doubles (with rust)
